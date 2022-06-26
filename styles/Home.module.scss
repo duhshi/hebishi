@@ -1,0 +1,134 @@
+.App {
+  --header-height: 10vh;
+
+  text-align: center;
+  color: white;
+  // border: 2px dotted lightcyan;
+  height: 100vh;
+
+  >header {
+    // border: 2px solid coral;
+    height: var(--header-height);
+
+    display: flex;
+    justify-content: center;
+  }
+
+  main {
+    // border: 2px dashed blueviolet;
+    height: calc(100vh - var(--header-height));
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    section {
+      // border: 1px dotted aqua;
+      width: 80vw;
+
+      h1 {
+        margin: 10vh auto;
+        font-size: 3rem;
+      }
+
+      >div {
+        display: flex;
+        justify-content: space-around;
+        // border: 1px solid lightcoral;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: inherit
+      }
+
+      .chooseButton {
+
+        // border: 1px dotted yellow;
+        padding: 3.4vh 3.4vh 1.7vh 3.4vh;
+        filter: brightness(0.3);
+        transition: all .3s ease;
+
+        img {
+          height: 30vh;
+          width: 30vh;
+        }
+
+        p {
+          opacity: 0;
+          margin-top: 1.7vh;
+          font-size: 1.5rem;
+
+        }
+
+        &:hover {
+          filter: brightness(1);
+          scale: 1.02;
+
+          p {
+            opacity: 1;
+          }
+        }
+
+        @media(max-width: 900px) {
+          padding: 1rem 1rem .5rem 1rem;
+
+          img {
+            height: 100%;
+            width: 100%;
+          }
+
+          p {
+            opacity: 1;
+          }
+        }
+      }
+
+
+    }
+  }
+
+}
+
+.jujuba {
+  @media (min-width: 700px) {
+    padding: 1rem 5rem;
+
+  }
+
+  @media (min-width: 1000px) {
+    padding: 1rem 10rem;
+
+  }
+
+  @media (min-width: 2000px) {
+    padding: 1rem 15rem;
+
+  }
+
+
+  padding: 1rem;
+
+
+  .displayImage {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+
+    img {
+      width: 18rem;
+
+      @media (min-width: 700px) {
+
+        width: 35vw;
+      }
+    }
+
+    img:nth-child(odd) {
+      align-self: flex-end;
+    }
+
+    img:nth-child(even) {
+      align-self: flex-start;
+    }
+  }
+}
