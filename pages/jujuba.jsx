@@ -4,8 +4,8 @@ export default function Jujuba() {
     <main className={styles.jujuba}>
       <div className={styles.displayImage}>
         <img src="https://raw.githubusercontent.com/duhshi/audios-anniversary/main/imagem1.jpg" alt="jpg" />
-        <img src="https://raw.githubusercontent.com/duhshi/audios-anniversary/main/imagem2.jpg" alt="jpg" />
-        <img src="https://raw.githubusercontent.com/duhshi/audios-anniversary/main/imagem3.png" alt="jpg" />
+        <img src="https://raw.githubusercontent.com/duhshi/audios-anniversary/main/imagem2.png" alt="jpg" />
+        <img src="https://raw.githubusercontent.com/duhshi/audios-anniversary/main/imagem3.jpg" alt="jpg" />
         <img src="https://raw.githubusercontent.com/duhshi/audios-anniversary/main/imagem4.png" alt="jpg" />
         <img src="https://raw.githubusercontent.com/duhshi/audios-anniversary/main/imagem5.jpg" alt="jpg" />
         <img src="https://raw.githubusercontent.com/duhshi/audios-anniversary/main/imagem6.jpg" alt="jpg" />
